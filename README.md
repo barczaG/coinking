@@ -2,7 +2,8 @@ coinking
 ========
 
 Coingking is a sample js app with node.js - sails.js backend and Backbone Frontend
-Demo: takker.me:2337
+
+Demo: http://takker.me:2337
 
 Backend
 ------
