@@ -1,0 +1,46 @@
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Be the king </h4>
+      </div>
+      <div class="modal-body">
+        <div class="pay-step1">
+          <form role="form" id="pay-form">
+            <div class="form-group">
+              <label for="exampleInputEmail1">King's name</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" name="name" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">King's word</label>
+              <textarea class="form-control" name="words" rows="3"></textarea>
+            </div>
+
+            <button type="button" id="pay-submit" class="btn btn-default">Submit</button>
+          </form>
+        </div>
+        <div class="pay-step2" style="display:none">
+        <h3>Transaction details:</h3>
+          Amount : <span id="pay-amount"></span><br>
+          Address: <span id="pay-adr"></span><br>
+          <img id="pay-adr-img" src="">
+          <button type="button" id="pay-emulate" class="btn btn-danger" >Emulate payment</button>
+          
+        </div>
+        <div class="pay-step3" style="display:none">
+          <h3>We got your payment, but you have to wait till 6 confirmations to get the throne</h3>
+           Confirmations : <span id="pay-confirmations"></span> <i class="fa fa-refresh fa-spin"></i><br>
+        </div>
+        <div class="pay-step4" style="display:none">
+          <h3>Your payment is confirmed! You are the king now!</h3>
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Ok</button>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <!--<button type="button" class="btn btn-primary">Save changes</button>-->
+      </div>
+    </div>
+  </div>
+</div>
